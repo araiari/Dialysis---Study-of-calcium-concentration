@@ -8,18 +8,14 @@ We are collaborating with the Departments of Mathematics of Politecnico di Milan
 that gave us the dataset to work with. 
 Since the data are private, we will share the methods and the results without providing the original data.
 
+A short explanation of the work is presented below. The analysis can be found in each specific folder.
 
 ### Preliminary analysis
 We started with a preliminary analysis to understand the relevance and the relationship between available features. 
 
-###### PCA and MCA
 PCA and correlation analysis for continuous variables and MCA for cathegoriacal variables were performed. 
 PCA did not show any particoular dependence and did not allow us to reduce the dimensionality of the dataset.
 Interesntig results were given by MCA, which evidentiate an high dependency of the data from the hospital.
-###### Markov chain
-fjdasdjask
-
-
 
 ### Linear mixed-effect model
 We tried to fit a model in order to predict the values of total calcium at the end of the dialysis session using the averaged data. 
@@ -29,11 +25,17 @@ Linear model did not perform well in describing the variability of the data.
 In light of the previous results, in order to satisfy the hypothesis of independence, a mixed effects model was fitted.
 Then we generalized this approach to take into account the grouping structure induced by the different patients in the different hospitals.
 
-
 ### Clustering and CART
 For each observation there are available five measurements of ionized calcium in different instant of dialysis. 
 We aimed at clutering the interpolated curves using KNN algorithm, 
 and thereafter learning the features to explain the labels through a CART.
+
+### Markoc Chain
+To understand how the free calcium concentration varies during the dialysis session, we built a Markov chain model. 
+Three states were chosen from the standard ranges of calcium concentration of dialyzed patients.
+
+
+
 
 
 
