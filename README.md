@@ -30,7 +30,7 @@ For each observation there are available five measurements of ionized calcium in
 We aimed at clutering the interpolated curves using KNN algorithm, 
 and thereafter learning the features to explain the labels through a CART.
 
-### Markoc Chain
+### Markov Chain
 To understand how the free calcium concentration varies during the dialysis session, we built a Markov chain model. 
 Three states were chosen from the standard ranges of calcium concentration of dialyzed patients.
 
