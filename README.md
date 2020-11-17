@@ -12,11 +12,14 @@ Since the data are private, we will share the methods and the results without pr
 ### Preliminary analysis
 We started with a preliminary analysis to understand the relevance and the relationship between available features. 
 
+###### PCA and MCA
 PCA and correlation analysis for continuous variables and MCA for cathegoriacal variables were performed. 
 PCA did not show any particoular dependence and did not allow us to reduce the dimensionality of the dataset.
 Interesntig results were given by MCA, which evidentiate an high dependency of the data from the hospital.
+###### Markov chain
+fjdasdjask
 
-In the respective folder, one can find the results.
+
 
 ### Linear mixed-effect model
 We tried to fit a model in order to predict the values of total calcium at the end of the dialysis session using the averaged data. 
@@ -26,7 +29,6 @@ Linear model did not perform well in describing the variability of the data.
 In light of the previous results, in order to satisfy the hypothesis of independence, a mixed effects model was fitted.
 Then we generalized this approach to take into account the grouping structure induced by the different patients in the different hospitals.
 
-In the respective folder, one can find the results.
 
 ### Clustering and CART
 For each observation there are available five measurements of ionized calcium in different instant of dialysis. 
