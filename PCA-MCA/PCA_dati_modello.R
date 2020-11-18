@@ -1,9 +1,9 @@
 # PCA DELLE VARIABILI CONTINUE NELL'ULITMO DATASET PER IL MODELLO
 # SUL CALCIO TOTALE
 
-load("C:/Users/Utente/Documents/aa POLIMI/AA_Applied_Statistics/Dialysis Project/InfoSedute_dialisi_AS.Rdata")
-load("C:/Users/Utente/Documents/aa POLIMI/AA_Applied_Statistics/Dialysis Project/AA_FABRIZIO/dati_modificati.RData")
-load("C:/Users/Utente/Documents/aa POLIMI/AA_Applied_Statistics/Dialysis Project/Anagrafica_dialisi_AS.Rdata")
+load("InfoSedute_dialisi_AS.Rdata")
+load("dati_modificati.RData")
+load("Anagrafica_dialisi_AS.Rdata")
 
 Uc_i=merge(CALCEMIA,infosedute_AS,by=c("Codice_paziente","Seduta_n"))
 
@@ -47,7 +47,7 @@ temp=na.omit(v)
 dati_anag <- anagrafica_AS
 names(dati_anag)
 
-# rimuoviamo le colonne cardiopatia perchè troppi NA
+# rimuoviamo le colonne cardiopatia perchÃ¨ troppi NA
 dati_anag <- dati_anag[ , -c(8)]
 dati_anag <- data.frame(dati_anag)
 dati_anag <- na.omit(dati_anag)
