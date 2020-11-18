@@ -14,7 +14,7 @@
 # nuova matrice Z, ottengo autovalori e scores
 # Posso avere analisi per riga e colonna 
 # vanno eliminate dall'analisi le variabili con osservazioni sbilanciate 
-# per problemi singolarit‡ matrice
+# per problemi singolarit√† matrice
 
 
 
@@ -31,8 +31,7 @@ library(rgl)
 library(MASS)
 library(car)
 
-setwd("C:/Users/Utente/Documents/aa POLIMI/AA_Applied_Statistics/Dialysis Project/Script")
-load("~/aa POLIMI/AA_Applied_Statistics/Dialysis Project/Anagrafica_dialisi_AS.Rdata")
+load("Anagrafica_dialisi_AS.Rdata")
 
 data_cat <- anagrafica_AS[,c(3,6:14)]
 
